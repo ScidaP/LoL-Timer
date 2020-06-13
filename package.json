@@ -1,0 +1,25 @@
+{
+  "name": "lol-timer",
+  "version": "1.0.0",
+  "description": "Cooldown Tracker for League of Legends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Lol",
+    "League",
+    "of",
+    "Legends",
+    "Cooldown",
+    "Tracker",
+    "Timer",
+    "Tracker"
+  ],
+  "author": "Patricio Scidá",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="StyleSheet" href="css/main.css">
+    <title>Cooldown Timer</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="img/teemo.gif" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            LoL Timer
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="html/aboutme.html">About me</a>
+          </div>
+        </div>
+    </nav>
+    <div class="container d-inline">
+        <form id="formulario">
+        <label for="seleccion-campeon" style="margin: 1em;" class="col-sm-4"> Type the champion's name
+            <input id="seleccion-campeon" type="text" class="form-control w-100" style="margin-top: 0.5em;" autocomplete="off" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode == 32)">
+        </label>
+        <button id="submit-button" type="button" class="btn btn-success mb-2">Ok</button>
+        </form>
+        <main>
+            <div class="column d-inline-block">
+                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraQ"><strong>Q</strong></button>
+                <button type="button" id="boton1" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+            </div>
+            <div class="column d-inline-block">
+                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraW"><strong>W</strong></button>
+                <button type="button" id="boton2" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+            </div>
+            <div class="column d-inline-block">
+                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraE"><strong>E</strong></button>
+                <button type="button" id="boton3" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+            </div>
+            <div class="column d-inline-block">
+                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraR"><strong>R</strong></button>
+                <button type="button" id="boton4" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+            </div>
+                <button type="submit" id="refrescar" class="btn btn-warning mb-4 ml-5">Refresh All</button>
+            <div class="row">
+            </div>
+            <label for="champion-info" class="col-sm-4 m-1 h5" id="label-tips">Tips you may need</label>
+            <div class="alert alert-info w-75 ml-3 p-3 mt-1" role="alert" id="champion-info">
+                Your tip will show up after you press "Ok"!
+            </div>
+        </main>
+    </div>
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="src/campeones.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/autocomplete.js"></script>
+    <script>
+        autocomplete(document.getElementById("seleccion-campeon"), champs);
+    </script> 
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# Draft Files
+borrador.html
+borrador.css
+borrador.js
+Cooldowns.txt
