@@ -23,7 +23,7 @@
           </div>
         </div>
     </nav>
-    <div class="container d-inline">
+    <div class="container-fluid d-inline">
         <form id="formulario">
         <label for="seleccion-campeon" style="margin: 1em;" class="col-sm-4"> Type the champion's name
             <input id="seleccion-campeon" type="text" class="form-control w-100" style="margin-top: 0.5em;" autocomplete="off" onkeypress="return (event.charCode > 64 && 
@@ -32,31 +32,38 @@
         <button id="submit-button" type="button" class="btn btn-success mb-2">Ok</button>
         </form>
         <main>
-            <div class="column d-inline-block">
-                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraQ"><strong>Q</strong></button>
-                <button type="button" id="boton1" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
-            </div>
-            <div class="column d-inline-block">
-                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraW"><strong>W</strong></button>
-                <button type="button" id="boton2" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
-            </div>
-            <div class="column d-inline-block">
-                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraE"><strong>E</strong></button>
-                <button type="button" id="boton3" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
-            </div>
-            <div class="column d-inline-block">
-                <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraR"><strong>R</strong></button>
-                <button type="button" id="boton4" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
-            </div>
-                <button type="submit" id="refrescar" class="btn btn-warning mb-4 ml-5">Refresh All</button>
-            <div class="row">
-            </div>
-            <label for="champion-info" class="col-sm-4 m-1 h5" id="label-tips">Tips you may need</label>
-            <div class="alert alert-info w-75 ml-3 p-3 mt-1" role="alert" id="champion-info">
-                Your tip will show up after you press "Ok"!
-            </div>
-        </main>
+        <div class="column d-inline-block">
+            <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraQ"><strong>Q</strong></button>
+            <button type="button" id="boton1" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+        </div>
+        <div class="column d-inline-block">
+            <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraW"><strong>W</strong></button>
+            <button type="button" id="boton2" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+        </div>
+        <div class="column d-inline-block">
+            <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraE"><strong>E</strong></button>
+            <button type="button" id="boton3" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+        </div>
+        <div class="column d-inline-block">
+            <button class="letras btn btn-primary p-3 mx-3 px-4 mb-4" type="button" id="letraR"><strong>R</strong></button>
+            <button type="button" id="boton4" class="botones btn btn-outline-secondary mt-1"><strong>Refresh</strong></button>
+        </div>
+        <button type="submit" id="refrescar" class="btn btn-warning mb-4 ml-5">Refresh All</button>
     </div>
+    <div class="container d-inline-block">
+        <ul class="list-group list-group-flush d-inline-block" id="flash-timer">
+            <li class="list-group-item"><img src="imagenes-logo/Flash_HD.png" class="d-inline-block col" width="45" height="45" style="width: 5em;"></li>
+            <li class="list-group-item"><p class="pl-3"> 00:00s</p></li>
+        </ul>
+    </div>
+    <div class="container-fluid d-inline">
+        <label for="champion-info" class="col-sm-4 m-1 h5" id="label-tips">Tips you may need</label>
+        <div class="alert alert-info w-75 ml-3 p-3 mt-1" role="alert" id="champion-info">
+            Your tip will show up after you press "Ok"!
+        </div>
+    </div>
+    </main>
+
     
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

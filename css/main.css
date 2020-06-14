@@ -44,6 +44,11 @@
   flex-wrap: wrap;
 }
 
-#champion-info {
-  transition-duration: 1s;
+#flash-timer {
+  transition-duration: 0.4s;
+}
+
+#flash-timer:hover {
+  margin-left: 0.5em;
+  cursor: pointer;
 }
