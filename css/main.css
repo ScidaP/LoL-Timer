@@ -44,11 +44,11 @@
   flex-wrap: wrap;
 }
 
-#flash-timer {
+#timer-flash {
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-#flash-timer:hover {
-  margin-left: 0.5em;
-  cursor: pointer;
+.fuente-blanca {
+  color: white;
 }

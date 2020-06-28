@@ -237,5 +237,4 @@ const tips = {
     Sona : "Base cooldown on basic abilities is reduced with R ranks: 10%/25%/40%",
     Swain : "Passive cooldown is static and dependes on level.",
     Sylas : "Passive can store 3 charges. Hijacked ultimate hold duration: 90 seconds.",
-
 }

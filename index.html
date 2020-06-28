@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="index.html">Home</a>
-            <a class="nav-item nav-link" href="html/aboutme.html">About me</a>
+            <a class="nav-item nav-link" href="html/aboutme.html">Other</a>
           </div>
         </div>
     </nav>
@@ -50,15 +50,21 @@
         </div>
         <button type="submit" id="refrescar" class="btn btn-warning mb-4 ml-5">Refresh All</button>
     </div>
-    <div class="container d-inline-block">
-        <ul class="list-group list-group-flush d-inline-block" id="flash-timer">
+    <div class="container d-inline-block mt-3">
+        <ul class="list-group list-group-flush d-inline-block" id="timer-flash">
             <li class="list-group-item"><img src="imagenes-logo/Flash_HD.png" class="d-inline-block col" width="45" height="45" style="width: 5em;"></li>
-            <li class="list-group-item"><p class="pl-3"> 00:00s</p></li>
+            <li class="list-group-item user-select-none"><h4 class="pl-3 fuente-blanca" id="segundos-timer-flash">300</h4></li>
         </ul>
+        <button type="button" class="btn btn-primary align-top ml-2 mr-4" style="height: 8em;">Refresh</button>
+        <ul class="list-group list-group-flush d-inline-block" id="flash-timer">
+            <li class="list-group-item"><img src="imagenes-logo/Ignite.jpg" class="d-inline-block col" width="45" height="45" style="width: 5em;"></li>
+            <li class="list-group-item user-select-none"><h4 class="pl-3 fuente-blanca" id="segundos-timer-flash">300</h4></li>
+        </ul>
+        <button type="button" class="btn btn-primary align-top ml-2 mr-4" style="height: 8em;">Refresh</button>
     </div>
     <div class="container-fluid d-inline">
-        <label for="champion-info" class="col-sm-4 m-1 h5" id="label-tips">Tips you may need</label>
-        <div class="alert alert-info w-75 ml-3 p-3 mt-1" role="alert" id="champion-info">
+        <label for="champion-info" class="col-sm-4 m-1 h5 user-select-none" id="label-tips">Tips you may need</label>
+        <div class="alert alert-info w-75 ml-3 p-3 mt-1 user-select-none" role="alert" id="champion-info">
             Your tip will show up after you press "Ok"!
         </div>
     </div>

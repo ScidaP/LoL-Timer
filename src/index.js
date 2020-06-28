@@ -20,7 +20,7 @@ $submit.onclick = function(){
         document.querySelector("#label-tips").innerText += ` for ${campeonSeleccionado.value}`;
     } else {
         return $info.innerText = 
-        `I'm sorry, there aren't quite good tips for ${campeonSeleccionado.value};`
+        `I'm sorry, there aren't quite helpful tips for ${campeonSeleccionado.value}`;
     }
 }
 
@@ -293,7 +293,7 @@ const tipsCampones = function(){
             break;
     }
 }
-let i = 0;
+const i = 0;
 
 const $botonQ = document.querySelector("#letraQ");
 const $botonW = document.querySelector("#letraW");
@@ -440,4 +440,31 @@ restartR = document.querySelector("#boton4");
 restartR.onclick = function (){
     clearInterval(tempR);
     configR();
+}
+
+const $timerFlash = document.querySelector("#timer-flash");
+const $segundosTimerFlash = document.querySelector("#segundos-timer-flash");
+
+$timerFlash.onclick = function(){
+    tempFlash = setInterval(timerFlash, 1000);
+    $segundosTimerFlash.classList.remove("fuente-blanca");
+}
+
+let flash = 300;
+let ignite = 180;
+
+function timerFlash(){
+    if (i < flash){
+        flash = flash - 1;
+        $segundosTimerFlash.textContent = flash;
+    } else if (i >= flash){
+        configFlash();
+    }
+}
+
+function configFlash(){
+    clearInterval(tempFlash);
+    $segundosTimerFlash.textContent = 300;
+    flash = 300;
+    $segundosTimerFlash.classList.add("fuente-blanca");
 }
